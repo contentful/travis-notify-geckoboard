@@ -1,0 +1,32 @@
+{
+  "name": "travis-notify-geckoboard",
+  "version": "0.0.0",
+  "description": "Notify Geckoboard widgets with Travis CI build results",
+  "main": "index.js",
+  "bin": {
+    "travis-notify-geckoboard": "travis-notify-geckoboard.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/contentful/travis-notify-geckoboard.git"
+  },
+  "keywords": [
+    "travis",
+    "ci",
+    "geckoboard",
+    "dashboard",
+    "build",
+    "notification"
+  ],
+  "author": "Stephan Seidt <evilhackerdude@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/contentful/travis-notify-geckoboard/issues"
+  },
+  "homepage": "https://github.com/contentful/travis-notify-geckoboard",
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "optimist": "~0.6.0",
+    "questor": "~1.0.0-alpha"
+  }
+}
