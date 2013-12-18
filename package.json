@@ -1,6 +1,6 @@
 {
   "name": "travis-notify-geckoboard",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Notify Geckoboard widgets with Travis CI build results",
   "main": "index.js",
   "bin": {
