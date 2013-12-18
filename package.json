@@ -4,7 +4,7 @@
   "description": "Notify Geckoboard widgets with Travis CI build results",
   "main": "index.js",
   "bin": {
-    "travis-notify-geckoboard": "travis-notify-geckoboard.js"
+    "travis-notify-geckoboard": "bin/travis-notify-geckoboard.js"
   },
   "repository": {
     "type": "git",
