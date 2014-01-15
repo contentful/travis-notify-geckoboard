@@ -2,7 +2,8 @@
 
 Notify Geckoboard widgets with Travis CI build results
 
-![Screenshot](screenshot.png)
+![Screenshot of passing build](screenshot-build-passed.png)
+![Screenshot of failing build](screenshot-build-failed.png)
 
 ## Usage
 
