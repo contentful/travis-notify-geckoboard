@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/contentful/travis-notify-geckoboard.git"
+    "url": "git://github.com/contentful-labs/travis-notify-geckoboard.git"
   },
   "keywords": [
     "travis",
@@ -21,9 +21,9 @@
   "author": "Stephan Seidt <evilhackerdude@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/contentful/travis-notify-geckoboard/issues"
+    "url": "https://github.com/contentful-labs/travis-notify-geckoboard/issues"
   },
-  "homepage": "https://github.com/contentful/travis-notify-geckoboard",
+  "homepage": "https://github.com/contentful-labs/travis-notify-geckoboard",
   "dependencies": {
     "lodash": "~2.4.1",
     "optimist": "~0.6.0",
