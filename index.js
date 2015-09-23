@@ -26,7 +26,7 @@ function notifyDashboard(options, data) {
 exports.TextWidgetValue = TextWidgetValue;
 function TextWidgetValue() {}
 TextWidgetValue.create = function(properties) {
-  return _.extend(new TextWidgetValue(), {item: properties});
+  return _.extend(new TextWidgetValue(), {item: [properties]});
 };
 
 exports.TravisCIEnv = TravisCIEnv;
