@@ -5,6 +5,7 @@
 var argv = require('optimist')
   .options('api-key',    {demand: true, alias: 'a'})
   .options('widget-key', {demand: true, alias: 'w'})
+  .options('start',      {demand: false, alias: 's'})
   .argv;
 var main = require('..');
 
@@ -14,4 +15,4 @@ var widgetKey = argv['widget-key'];
 main.notifyDashboard({
   apiKey: apiKey,
   widgetKey: widgetKey
-}, main.TravisCIEnv.createFromEnv(process.env).toTextWidgetValue());
+}, main.TravisCIEnv.createFromEnv(process.env).toTextWidgetValue(!!argv['start']));

@@ -39,11 +39,20 @@ TravisCIEnv.createFromEnv = function(env) {
     testResult: env.TRAVIS_TEST_RESULT
   });
 };
-TravisCIEnv.prototype.toTextWidgetValue = function() {
-  var passed = (this.testResult === '0');
-  var color = passed ? '#78ab49' : '#b84d38';
-  var text = passed ? 'Passed' : 'Failed';
-  var type = passed ? 0 : 1;
+TravisCIEnv.prototype.toTextWidgetValue = function(building) {
+
+  var color, text, type;
+  if (building) {
+    color = '#e39c4f';
+    text = 'Building...';
+    type = 0;
+  } else {
+    var passed = (this.testResult === '0');
+    color = passed ? '#78ab49' : '#b84d38';
+    text = passed ? 'Passed' : 'Failed';
+    type = passed ? 0 : 1;
+  }
+
   return TextWidgetValue.create({
     text: [
       '<div>Build #' + this.buildNumber + '</div>',
