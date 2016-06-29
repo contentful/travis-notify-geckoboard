@@ -11,6 +11,6 @@ Notify Geckoboard widgets with Travis CI build results
 2. Add this to your `.travis.yml`:
 
 ``` yaml
-before_script: npm install -g travis-notify-geckoboard
+before_script: npm install -g travis-notify-geckoboard && travis-notify-geckoboard -a GECKOBOARD_API_KEY -w GECKOBOARD_WIDGET_KEY -s
 after_script: travis-notify-geckoboard -a GECKOBOARD_API_KEY -w GECKOBOARD_WIDGET_KEY
 ```
