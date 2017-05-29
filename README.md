@@ -1,3 +1,7 @@
+# This repository is deprecated. There is no further support or maintenence planned.
+
+---
+
 # travis-notify-geckoboard
 
 Notify Geckoboard widgets with Travis CI build results
